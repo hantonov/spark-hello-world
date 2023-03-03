@@ -12,3 +12,4 @@ scripts/databricks/*_token
 .metals/*
 *.code-workspace
 *.class
+.venv
