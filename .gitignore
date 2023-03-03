@@ -1,0 +1,14 @@
+*.swp
+**/target/**
+project/
+.bsp
+.idea/
+**/.DS_Store
+metastore_db
+derby.log
+scripts/databricks/*_token
+**/venv/**
+.bloop/*
+.metals/*
+*.code-workspace
+*.class

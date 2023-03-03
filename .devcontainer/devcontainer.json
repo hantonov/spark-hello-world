@@ -1,0 +1,35 @@
+{
+    "name": "Spark Scala Dev",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "SPARK_MODE": "master"
+        }
+    },
+    "shutdownAction": "stopContainer",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash",
+                        "icon": "terminal-bash"
+                    }
+                },
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "scalameta.metals",
+                "streetsidesoftware.code-spell-checker",
+                "databricks.databricks",
+                "databricks.sqltools-databricks-driver",
+                "pkief.material-icon-theme",
+                "github.copilot",
+                "github.copilot-labs"
+            ]
+        }
+    },
+    "forwardPorts": [
+        8080
+    ]
+}
